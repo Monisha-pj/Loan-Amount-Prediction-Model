@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loan Amount Predictor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🏦 Loan Prediction Tool</h1>
+        <form method="POST">
+            <label>Gender:</label>
+            <select name="gender"><option>Male</option><option>Female</option></select>
+
+            <label>Married:</label>
+            <select name="married"><option>Yes</option><option>No</option></select>
+
+            <label>Dependents:</label>
+            <select name="dependents"><option>0</option><option>1</option><option>2</option><option>3+</option></select>
+
+            <label>Education:</label>
+            <select name="education"><option>Graduate</option><option>Not Graduate</option></select>
+
+            <label>Self Employed:</label>
+            <select name="self_employed"><option>Yes</option><option>No</option></select>
+
+            <label>Applicant Income:</label>
+            <input type="number" name="income" required>
+
+            <label>Co-applicant Income:</label>
+            <input type="number" name="co_income" required>
+
+            <label>Loan Term (months):</label>
+            <input type="number" name="term" required>
+
+            <label>Credit History:</label>
+            <select name="credit"><option value="1.0">Good (1.0)</option><option value="0.0">Bad (0.0)</option></select>
+
+            <button type="submit">Predict Loan Amount</button>
+        </form>
+        
+
+        {% if result %}
+            <div class="result">
+                <h2>Predicted Loan Amount: {{ result }}</h2>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>

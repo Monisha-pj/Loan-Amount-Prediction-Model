@@ -1,0 +1,94 @@
+/* Base Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Make body take full height and allow scroll if needed */
+  html, body {
+    min-height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+  }
+  
+  /* Container Styling */
+  .container {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  /* Headings */
+  .container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 24px;
+  }
+  
+  /* Labels & Inputs */
+  label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #444;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+  
+  /* Submit Button */
+  button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #00b894;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #019875;
+  }
+  
+  /* Prediction result */
+  .result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e8f8f5;
+    border-left: 5px solid #00b894;
+    font-weight: bold;
+    color: #2d3436;
+    border-radius: 10px;
+  }
+  
+  /* Responsive fallback */
+  @media screen and (max-height: 600px) {
+    body {
+      align-items: flex-start;
+      padding-top: 40px;
+    }
+  }
+  
