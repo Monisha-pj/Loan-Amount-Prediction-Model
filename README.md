@@ -80,5 +80,5 @@ http://127.0.0.1:5000
 You should see the Loan Amount Prediction Tool web interface.
 
 ## Screenshots
-
+![Loan Output](screenshot/output.png)
 
