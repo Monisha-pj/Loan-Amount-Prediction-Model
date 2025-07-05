@@ -57,3 +57,44 @@ This project uses **Python**, **Flask**, and **HTML/CSS** to create an interacti
 ```bash
 git clone https://github.com/Monisha-pj/Loan-Amount-Prediction-Model.git
 cd Loan-Amount-Prediction-Model
+
+### 2. Create Virtual Environment (optional but recommended)
+
+```bash
+python -m venv venv
+
+2. Create Virtual Environment (optional but recommended)
+bash
+Copy
+Edit
+python -m venv venv
+Activate the environment:
+On macOS/Linux:
+
+bash
+Copy
+Edit
+source venv/bin/activate
+On Windows:
+
+bash
+Copy
+Edit
+venv\Scripts\activate
+3. Install Dependencies
+bash
+Copy
+Edit
+pip install -r requirements.txt
+4. Run the App
+bash
+Copy
+Edit
+python app.py
+Now open your browser and visit:
+
+cpp
+Copy
+Edit
+http://127.0.0.1:5000
+You should see the Loan Amount Prediction Tool web interface.
